@@ -1,3 +1,4 @@
+package Test;
 import java.util.Scanner;
 
 public class simpleNotesCRUD {
@@ -7,7 +8,7 @@ public class simpleNotesCRUD {
     String description;
     boolean isCompleted;
 
-    //Constructor
+    //Constructor for initialization
     public simpleNotesCRUD () {
 
         this.ID = ID;
@@ -17,6 +18,8 @@ public class simpleNotesCRUD {
     }
 
     //Getter and setter
+
+
 
 
 
