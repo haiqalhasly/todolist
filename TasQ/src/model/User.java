@@ -3,10 +3,10 @@ package TasQ.src.model;
 import java.util.ArrayList;
 
 public class User {
-    int userID;
-    String name;
-    int exp;
-    ArrayList<Boolean> completedTasks = new ArrayList<Boolean>();
+    private int userID;
+    private String name;
+    private int exp;
+    private ArrayList<Task> completedTasks;
 
     //Constructor for initialization
     public User(){
@@ -21,11 +21,12 @@ public class User {
     public int getUserID(){ return userID;}
     public String getName(){ return name;}
     public int getExp(){ return exp;}
-    public ArrayList<Boolean> getCompletedTasks(){ return completedTasks;}
+    public ArrayList<Task> getCompletedTasks(){ return completedTasks;}
     
 
     //Setters
+    public void setUserID(int userID) { this.userID = userID; }
     public void setName(String name){this.name = name;}
-    public void setCompletedTasks(ArrayList<Boolean> completedTasks){this.completedTasks = completedTasks;}
+    public void setCompletedTasks(ArrayList<Task> completedTasks){this.completedTasks = completedTasks;}
     public void setExp(int exp){this.exp = exp;}
 }

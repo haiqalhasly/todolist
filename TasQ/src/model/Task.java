@@ -5,9 +5,10 @@ public class Task {
     private String title;
     private String description;
     private int exp;
+    public boolean getTaskID;
 
     //Constructor for initialization
-    public Task () {
+    public Task (int taskID2, String title2, String description2, int exp2) {
         this.taskID = taskID;
         this.title = title;
         this.description = description;
@@ -16,7 +17,7 @@ public class Task {
     }
 
     //Getters
-    public int getID(){ return taskID;}
+    public int getTaskID(){ return taskID;}
     public String getTitle(){ return title;}
     public String getDescription(){ return description;}
     public int getExp(){ return exp;}
@@ -32,6 +33,11 @@ public class Task {
         System.out.println("Title: " + title);
         System.out.println("Description: " + description);
         System.out.println("EXP: " + exp);
+    }
+
+    public int size() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'size'");
     }
 
 }
