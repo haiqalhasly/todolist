@@ -9,7 +9,7 @@ public class taskController {
 
     private ArrayList <Task> tasks = new ArrayList<>();
 
-    public void addTask(String title, String description, int exp, Task task){
+    public void addTask(String title, String description, int exp){
 
         int taskID = tasks.size()+1;
         Task newTask = new Task(taskID,title,description, exp);

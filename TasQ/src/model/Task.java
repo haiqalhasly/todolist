@@ -8,7 +8,7 @@ public class Task {
     public boolean getTaskID;
 
     //Constructor for initialization
-    public Task (int taskID2, String title2, String description2, int exp2) {
+    public Task (int taskID, String title, String description, int exp) {
         this.taskID = taskID;
         this.title = title;
         this.description = description;
